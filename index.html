@@ -25,7 +25,8 @@
             class="logo fpart">Web</span><span class="logo spart">Studio</span></a>
         <ul class="ul list-nav">
           <li class="list-nav-link">
-            <a class="link nav current list-link" href="./index.html">Студія</a></li>
+            <a class="link nav current list-link" href="./index.html">Студія</a>
+          </li>
           <li class="list-nav-link">
             <a class="link nav list-link" href="./portfolio.html" rel="nofollow noopener noreferrer">Портфоліо</a>
           </li>
@@ -293,16 +294,71 @@
                   <use href="./img/sprites.svg#icon-linkedin-team"></use>
                 </svg></a></li>
         </div>
+        <div class="thumb-foot">
+          <form class="sub-data">
+            <label class="sub-text" for="sub">Підпишіться на розсилку
+              <input class="sub-form" type="email" name="sub" placeholder="Email" id="sub" />
+            </label>
+            <button class="sub-btn" type="submit">
+              Підписатися
+              <svg class="sub-icon" width="24" height="24">
+                <use href="./img/sprites.svg#icon-send"></use>
+              </svg>
+            </button>
+          </form>
+        </div>
       </div>
     </footer>
- <div class="backdrop is-hidden" data-modal>
-  <div class="modal">
-    <button class="btn-modal" type="button" data-modal-close>
-      <svg class="modal-icon"><use href="./img/sprites.svg#icon-Vector"></use></svg>
-    </button>
-  </div>
- </div>
- <script src="./js/modal.js"></script>
+    <div class="backdrop is-hidden" data-modal>
+      <div class="modal">
+        <form name="modal-form">
+          <p class="form-title">Залиште свої дані, ми вам передзвонимо</p>
+          <div class="form-filed">
+            <label class="form-label">Ім'я
+              <input class="form-item" type="text" name="name" />
+              <svg class="icon-modal" width="18" height="18">
+                <use href="./img/sprites.svg#icon-person-black"></use>
+              </svg>
+            </label>
+          </div>
+          <div class="form-filed">
+            <label class="form-label">Телефон
+              <input class="form-item" type="tel" name="tel" />
+              <svg class="icon-modal" width="18" height="18">
+                <use href="./img/sprites.svg#icon-phone-black"></use>
+              </svg>
+            </label>
+          </div>
+          <div class="form-filed">
+            <label class="form-label">Пошта
+              <input class="form-item" type="email" name="email" />
+              <svg class="icon-modal" width="18" height="18">
+                <use href="./img/sprites.svg#icon-email-black"></use>
+              </svg>
+            </label>
+          </div>
+          <div class="form-filed">
+            <label class="form-label" for="comment">Коментар
+              <textarea class="form-item comment-item" name="comment" id="comment" rows="8"
+                placeholder="Введіть текст"></textarea>
+            </label>
+          </div>
+          <div class="policy-form">
+            <label>Погоджуюся з розсилкою та приймаю <a class="policy-link" href="">Умови договору</a>
+              <input class="policy" type="checkbox" name="policy" />
+              <span class="policy-icon"></span>
+            </label>
+          </div>
+          <button class="send-btn" type="submit">Відправити</button>
+        </form>
+        <button class="btn-modal" type="button" data-modal-close>
+          <svg class="modal-icon">
+            <use href="./img/sprites.svg#icon-Vector"></use>
+          </svg>
+        </button>
+      </div>
+    </div>
+    <script src="./js/modal.js"></script>
 </body>
 
 </html>
